@@ -1,0 +1,9 @@
+.conteiner {
+   width: 1240px;
+   @media screen and (max-width: 1020px){
+      width: 768px;
+   }
+   @media screen and (max-width: 321px){
+      width: 320px;
+   }
+}
