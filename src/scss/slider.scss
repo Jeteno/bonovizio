@@ -109,7 +109,7 @@
    &::after {
       content: '';
       position: absolute;
-      background-image: url('/Users/user/Desktop/Bonovizio/src/img/prew-slide.svg');
+      background-image: url('/src/img/prew-slide.svg');
       width: 30px;
       height: 85px;
    }
@@ -133,7 +133,7 @@
    &::before {
       content: '';
       position: absolute;
-      background-image: url('/Users/user/Desktop/Bonovizio/src/img/next-slide.svg');
+      background-image: url('/src/img/next-slide.svg');
       width: 31px;
       height: 85px;
    }

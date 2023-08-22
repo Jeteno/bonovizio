@@ -37,19 +37,19 @@
    // margin-top: 37px;
    &::before {
       content: '';
-      background: url('/Users/user/Desktop/Bonovizio/src/img/Group.svg');
+      background: url('/src/img/Group.svg');
       width: 35.038px;
       height: 243.426px;
       position: absolute;
       left: -60px;
       @media screen and (max-width: 1020px){
-         background: url('/Users/user/Desktop/Bonovizio/src/img/prew1.svg');
+         background: url('/src/img/prew1.svg');
          width: 25.804px;
          height: 178.513px;
          left: -54px;
       }
       @media screen and (max-width: 321px){
-         background: url('/Users/user/Desktop/Bonovizio/src/img/group2.svg');
+         background: url('/src/img/group2.svg');
          width: 18px;
          height: 127.393px;
          left: -13px;
@@ -165,16 +165,16 @@
    }
 }
 .preview__img{
-   background-image: url('/Users/user/Desktop/Bonovizio/src/img/img.svg');
+   background-image: url('/src/img/img.svg');
    width: 397px;
    height: 361px;
    @media screen and (max-width: 1020px){
-      background-image: url('/Users/user/Desktop/Bonovizio/src/img/prew.svg');
+      background-image: url('/src/img/prew.svg');
       width: 244px;
       height: 211px;   
    }
    @media screen and (max-width: 321px){
-      background-image: url('/Users/user/Desktop/Bonovizio/src/img/prew3.svg');
+      background-image: url('/src/img/prew3.svg');
       width: 237px;
       height: 215px;   
       margin: auto;

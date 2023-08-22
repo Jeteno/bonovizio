@@ -1,5 +1,1143 @@
-body {
-  background-color: red;
+@charset "UTF-8";
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Bold.woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Bold.woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Thin.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Thin.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.conteiner {
+  width: 1240px;
+}
+@media screen and (max-width: 1020px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .conteiner {
+    width: 320px;
+  }
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Bold.woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Bold.woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Thin.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Thin.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.header__registration-btn, .menu-paragraph-link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__logo-link {
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.header__body {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+}
+
+.header__conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px 15px 51px;
+}
+@media screen and (max-width: 1020px) {
+  .header__conteiner {
+    padding: 16px 21px 14px 27px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .header__conteiner {
+    padding: 16px 20px 14px 20px;
+  }
+}
+
+.header__logo-link {
+  color: #0A2756;
+  font-size: 29px;
+}
+
+.menu__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1020px) {
+  .menu__body {
+    position: fixed;
+    z-index: 5;
+    top: 58px;
+    right: -100%;
+    width: 100%;
+    height: 902px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease 0s;
+    overflow: auto;
+    padding: 137px 0 176px 0;
+  }
+}
+@media screen and (max-width: 321px) {
+  .menu__body {
+    height: 392px;
+    padding: 40px 0 40px 0;
+  }
+}
+
+.active__menu {
+  right: 0;
+}
+
+.header__nav-bar-menu {
+  display: flex;
+  gap: 0 42px;
+}
+@media screen and (max-width: 1020px) {
+  .header__nav-bar-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .header__nav-bar-menu {
+    gap: 15px;
+  }
+}
+
+.menu-paragraph-link {
+  color: #0A2756;
+  font-size: 16px;
+}
+@media screen and (max-width: 1020px) {
+  .menu-paragraph-link {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 321px) {
+  .menu-paragraph-link {
+    font-size: 22px;
+  }
+}
+
+.header__registration {
+  margin: 0 128px 0 46px;
+}
+@media screen and (max-width: 1020px) {
+  .header__registration {
+    margin: 56px 0 92px 0;
+  }
+}
+@media screen and (max-width: 321px) {
+  .header__registration {
+    margin: 20px 0 35px 0;
+  }
+}
+
+.header__registration-btn {
+  width: 161px;
+  height: 36px;
+  border: 1px solid #007DFE;
+  background-color: inherit;
+  color: #007DFE;
+  font-size: 16px;
+}
+.header__registration-btn:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 1020px) {
+  .header__registration-btn {
+    text-align: center;
+    font-size: 32px;
+    width: 262.256px;
+    height: 58.575px;
+    border: 2.662px solid #007DFE;
+  }
+}
+@media screen and (max-width: 321px) {
+  .header__registration-btn {
+    text-align: center;
+    font-size: 22px;
+    width: 161px;
+    height: 36px;
+    border: 1px solid #007DFE;
+  }
+}
+
+.header__icon-list {
+  display: flex;
+  align-items: center;
+  gap: 0 11px;
+}
+
+.menu__icon {
+  display: none;
+}
+@media screen and (max-width: 1020px) {
+  .menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 21px;
+    cursor: pointer;
+  }
+  .menu__icon span, .menu__icon::before, .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #0A2756;
+  }
+  .menu__icon::before, .menu__icon::after {
+    content: "";
+  }
+  .menu__icon::before {
+    top: 0;
+  }
+  .menu__icon::after {
+    bottom: 0;
+  }
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+}
+
+.menu__icon.active__menu span {
+  transform: scale(0) translate(0px, -50%);
+}
+
+.menu__icon.active__menu::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+}
+
+.menu__icon.active__menu::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0px, 50%);
+}
+
+.conteiner {
+  width: 1240px;
+}
+@media screen and (max-width: 1020px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .conteiner {
+    width: 320px;
+  }
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Bold.woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Bold.woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Thin.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Thin.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.preview__body {
+  background: #0A2756;
+  display: flex;
+  justify-content: center;
+  margin-top: 66px;
+}
+
+.preview__conteiner {
+  margin: 32px 0 86px 0;
+}
+@media screen and (max-width: 1020px) {
+  .preview__conteiner {
+    margin: 53px 0 37px 0;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__conteiner {
+    margin: 60px 0 130px 0;
+  }
+}
+
+.preview__shell {
+  padding: 0 38px 0 220px;
+}
+@media screen and (max-width: 1020px) {
+  .preview__shell {
+    padding: 0 37px 0 74px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__shell {
+    padding: 0 20px;
+  }
+}
+
+.preview__greetings {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 321px) {
+  .preview__greetings {
+    flex-wrap: wrap;
+  }
+}
+
+.preview__content {
+  position: relative;
+}
+.preview__content::before {
+  content: "";
+  background: url("/Users/user/Desktop/Bonovizio/src/img/Group.svg");
+  width: 35.038px;
+  height: 243.426px;
+  position: absolute;
+  left: -60px;
+}
+@media screen and (max-width: 1020px) {
+  .preview__content::before {
+    background: url("/Users/user/Desktop/Bonovizio/src/img/prew1.svg");
+    width: 25.804px;
+    height: 178.513px;
+    left: -54px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__content::before {
+    background: url("/Users/user/Desktop/Bonovizio/src/img/group2.svg");
+    width: 18px;
+    height: 127.393px;
+    left: -13px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .preview__subtitle-svg {
+    width: 197.635px;
+    height: 40.416px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__subtitle-svg {
+    width: 140.451px;
+    height: 28.842px;
+    padding-left: 14px;
+  }
+}
+
+.preview__title {
+  margin: 34px 0 27px 0;
+}
+
+@media screen and (max-width: 1020px) {
+  .preview__title-svg {
+    width: 348.941px;
+    height: 122.125px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__title-svg {
+    width: 247.978px;
+    height: 87.153px;
+    padding-left: 14px;
+  }
+}
+
+.preview__list {
+  display: flex;
+  align-items: center;
+  gap: 0 35px;
+}
+@media screen and (max-width: 1020px) {
+  .preview__list {
+    gap: 0 26px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__list {
+    gap: 0 19px;
+    padding-left: 14px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .preview__paragraph-svg-1 {
+    width: 55.713px;
+    height: 15.972px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__paragraph-svg-1 {
+    width: 39.593px;
+    height: 11.398px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .preview__paragraph-svg-2 {
+    width: 74.578px;
+    height: 21.912px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__paragraph-svg-2 {
+    width: 52.999px;
+    height: 15.637px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .preview__paragraph-svg-3 {
+    width: 60.6px;
+    height: 8.668px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__paragraph-svg-3 {
+    width: 43.066px;
+    height: 6.185px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .preview__paragraph-svg-4 {
+    width: 58.584px;
+    height: 19.575px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__paragraph-svg-4 {
+    width: 41.634px;
+    height: 13.969px;
+  }
+}
+
+.preview__button {
+  margin-top: 65px;
+}
+@media screen and (max-width: 1020px) {
+  .preview__button {
+    position: absolute;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__button {
+    margin: 59px 0;
+    position: relative;
+  }
+}
+
+.preview__btn {
+  width: 423px;
+  height: 71px;
+  background: #007DFE;
+  color: #FFF;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 9.38px;
+  text-transform: uppercase;
+}
+.preview__btn:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 321px) {
+  .preview__btn {
+    width: 279px;
+    letter-spacing: 4.2px;
+  }
+}
+
+.preview__img {
+  background-image: url("/Users/user/Desktop/Bonovizio/src/img/img.svg");
+  width: 397px;
+  height: 361px;
+}
+@media screen and (max-width: 1020px) {
+  .preview__img {
+    background-image: url("/Users/user/Desktop/Bonovizio/src/img/prew.svg");
+    width: 244px;
+    height: 211px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__img {
+    background-image: url("/Users/user/Desktop/Bonovizio/src/img/prew3.svg");
+    width: 237px;
+    height: 215px;
+    margin: auto;
+  }
+}
+
+.preview__message {
+  margin: 48px 0;
+}
+@media screen and (max-width: 1020px) {
+  .preview__message {
+    margin: 192px 0 73px 0;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__message {
+    margin: 48px 0 0 0;
+  }
+}
+
+.preview__message-title {
+  width: 51%;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 1020px) {
+  .preview__message-title {
+    width: 76%;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__message-title {
+    width: 80%;
+  }
+}
+
+.preview__message-subtitle {
+  width: 47%;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+@media screen and (max-width: 1020px) {
+  .preview__message-subtitle {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 321px) {
+  .preview__message-subtitle {
+    width: 84%;
+  }
+}
+
+.preview__arrow {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 321px) {
+  .preview__arrow {
+    display: none;
+  }
+}
+
+.preview__arro-btn {
+  background-color: inherit;
+}
+
+.preview__arro-svg {
+  position: relative;
+  animation: bounce 3s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 50px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 0;
+  }
+}
+.conteiner {
+  width: 1240px;
+}
+@media screen and (max-width: 1020px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .conteiner {
+    width: 320px;
+  }
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Bold.woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Bold.woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Thin.woff2") format("woff2"), url("/Users/user/Desktop/Bonovizio/src/fonts/HelveticaNeueCyr-Thin.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.menu-paragraph-link, .header__registration-btn {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__logo-link {
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.slider__body {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__conteiner {
+  padding: 72px 220px 145px 220px;
+}
+@media screen and (max-width: 1020px) {
+  .slider__conteiner {
+    padding: 27px 70px 104px 70px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .slider__conteiner {
+    padding: 0 20px 103px 20px;
+  }
+}
+
+.slider__title-text {
+  color: #0A2756;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 321px) {
+  .slider__title-text {
+    font-size: 40px;
+  }
+}
+
+.slider__content {
+  position: relative;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.slide {
+  width: 378px;
+}
+@media screen and (max-width: 1020px) {
+  .slide {
+    width: 293px;
+  }
+}
+
+.swiper-slide-img {
+  width: 100%;
+}
+
+.swiper-slide-actions {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: inherit;
+  background: rgba(0, 128, 255, 0.7);
+  padding: 25px 29px;
+  transition: 0.3s linear;
+}
+
+.actions-title {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 13px;
+}
+
+.actions-subtitle {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 424px;
+}
+@media screen and (max-width: 1020px) {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 355px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 330px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12.97px;
+  height: 13px;
+  background: #E4E4E4;
+  border-radius: 9999px;
+  opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-right: 24px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0A2756;
+}
+
+.swiper__button-prev {
+  position: absolute;
+  left: -67px;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: auto;
+}
+.swiper__button-prev::after {
+  content: "";
+  position: absolute;
+  background-image: url("/Users/user/Desktop/Bonovizio/src/img/prew-slide.svg");
+  width: 30px;
+  height: 85px;
+}
+@media screen and (max-width: 1020px) {
+  .swiper__button-prev {
+    display: none;
+  }
+}
+
+.swiper__button-next {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -63px;
+  left: auto;
+}
+.swiper__button-next::before {
+  content: "";
+  position: absolute;
+  background-image: url("/Users/user/Desktop/Bonovizio/src/img/next-slide.svg");
+  width: 31px;
+  height: 85px;
+}
+@media screen and (max-width: 1020px) {
+  .swiper__button-next {
+    display: none;
+  }
+}
+
+.footer__body {
+  display: flex;
+  justify-content: center;
+  background: #0A2756;
+  padding: 140px 0 160px 0;
+}
+@media screen and (max-width: 1020px) {
+  .footer__body {
+    padding: 100px 0 90px 0;
+  }
+}
+@media screen and (max-width: 321px) {
+  .footer__body {
+    padding: 75px 0 112px 0;
+  }
+}
+
+.footer__conteiner {
+  display: flex;
+  flex-direction: column;
+  padding: 0 220px;
+}
+@media screen and (max-width: 1020px) {
+  .footer__conteiner {
+    padding: 0 71px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .footer__conteiner {
+    padding: 0 20px;
+  }
+}
+
+.footer__title-text {
+  color: #FFF;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+@media screen and (max-width: 321px) {
+  .footer__title-text {
+    font-size: 40px;
+  }
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 62px 0 100px 0;
+}
+@media screen and (max-width: 1020px) {
+  .footer__form {
+    margin: 100px 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  gap: 26px;
+}
+@media screen and (max-width: 321px) {
+  .form__row {
+    flex-wrap: wrap;
+  }
+}
+
+.form-control {
+  width: 387px;
+  height: 49.931px;
+  padding-left: 20px;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+@media screen and (max-width: 1020px) {
+  .form-control {
+    width: 300px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .form-control {
+    width: 280px;
+    height: 51.616px;
+  }
+}
+
+.form-wrong {
+  border: 3px solid #FB5555;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form__message {
+  margin: 26px 0px 28px 0px;
+}
+@media screen and (max-width: 321px) {
+  .form__message {
+    margin: 26px 0px 138px 0px;
+  }
+}
+
+.form__message-text {
+  width: 800px;
+  height: 120.832px;
+  padding: 14px 20px 14px 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+@media screen and (max-width: 1020px) {
+  .form__message-text {
+    width: 627px;
+    height: 121px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .form__message-text {
+    width: 280px;
+    height: 124.911px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .form__button {
+    margin: auto;
+  }
+}
+
+.form__btn {
+  width: 241px;
+  height: 70.902px;
+  background: #007DFE;
+  color: #FFF;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 9.38px;
+  text-transform: uppercase;
+}
+.form__btn:hover {
+  opacity: 0.5;
+}
+
+.footer__contacts {
+  text-align: center;
+}
+
+.email-link {
+  color: #FFF;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+@media screen and (max-width: 321px) {
+  .email-link {
+    font-size: 28px;
+  }
+}
+
+.phone-link {
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+@media screen and (max-width: 321px) {
+  .phone-link {
+    font-size: 22px;
+  }
+}
+
+.contacts__legal-information {
+  margin-top: 15px;
+}
+
+.legal-information-link {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  text-decoration-line: underline;
+}
+@media screen and (max-width: 321px) {
+  .legal-information-link {
+    font-size: 18px;
+  }
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: normal;
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #fff;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #fff;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
